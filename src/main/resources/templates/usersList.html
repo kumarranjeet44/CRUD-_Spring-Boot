@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+table, td, th {
+	border: 1px solid black;
+}
+
+table {
+	width: 50%;
+	border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+	<div style="margin: auto;width:50%">
+		<h1
+			style="text-decoration: underline;margin:0;">Users
+			List</h1>
+	</div>
+
+	<table style="margin: auto">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+
+			<tr th:each="user :${Users}">
+				<td th:text="${user.id}"></td>
+				<td th:text="${user.uname}"></td>
+				<td th:text="${user.email}"></td>
+				</br>
+			</tr>
+
+
+		</tbody>
+	</table>
+</body>
+</html>

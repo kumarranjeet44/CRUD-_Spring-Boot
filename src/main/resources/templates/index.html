@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div
+		style="margin: auto; width: 50%; border: 1px solid black; margin-top: 2%; padding: 1%">
+		<!-- (create)to save information to database -->
+		<h2 style="color:red;text-align:center;text-decoration:underline">User Management System</h2>
+		<form action="register" method="post">
+			<h2 style="text-decoration:underline">Register User</h2>
+			Id:<input type="number" name="id"><br> <br> Name:<input
+				type="text" name="uname"><br> <br> Email:<input
+				type="email" name="email"><br> <br> <input
+				type="submit" value="Register">
+		</form>
+		<hr>
+		<!-- (Read)to search by id from database -->
+		<form action="search" method="get">
+			<h2 style="text-decoration:underline">Search User</h2>
+			Id:<input type="number" name="id"><br> <br> <input
+				type="submit" value="Search ">
+		</form>
+		<hr>
+		<!-- (Read)to search all users from database -->
+		<form action="findAll" method="get">
+			<h2 style="text-decoration:underline">Get All Users</h2>
+			<input
+				type="submit" value="Find">
+		</form>
+		<hr>
+		<!-- (update)to update the information in database -->
+		<form action="update" method="put">
+			<h2 style="text-decoration:underline">Update User</h2>
+			Id:<input type="number" name="id"><br> <br> Name:<input
+				type="text" name="uname"><br> <br> Email:<input
+				type="email" name="email"><br> <br> <input
+				type="submit" value="Update">
+		</form>
+		<hr>
+
+		<!-- (Delete)to delete the information from database -->
+		<form action="delete" method="delete">
+			<h2 style="text-decoration:underline">Remove User</h2>
+			Id:<input type="number" name="id"><br> <br> <input
+				type="submit" value="Delete ">
+		</form>
+
+	</div>
+
+</body>
+</html>
